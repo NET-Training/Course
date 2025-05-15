@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คลังหลักสูตรออนไลน์</title>
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif; /* หรือฟอนต์ที่คุณชอบ */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+        h1 {
+            color: #005A9C; /* สีน้ำเงินหลัก (ปรับตามธีมของคุณ) */
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+        }
+        .button-link {
+            display: inline-block;
+            background-color: #007BFF; /* สีปุ่ม (ปรับได้) */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .button-link:hover {
+            background-color: #0056b3; /* สีปุ่มเมื่อ hover */
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        /* ถ้าคุณมีโลโก้ หรือรูปภาพประกอบ */
+        .logo-img {
+            max-width: 150px; /* ปรับขนาดตามต้องการ */
+            margin-bottom: 20px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>คลังหลักสูตรออนไลน์ของเรา</h1>
+        <p>
+            ยินดีต้อนรับสู่ศูนย์รวมหลักสูตรฝึกอบรมออนไลน์ ที่จะช่วยพัฒนาทักษะและความรู้ของคุณ
+            คลิกปุ่มด้านล่างเพื่อเริ่มค้นหาหลักสูตรที่น่าสนใจได้เลย!
+        </p>
+        <a href="https://script.google.com/macros/s/AKfycbzXQlcjtom_llWsPDzobZsZ374LlD-dXO03eQWYZH5u_saG4gXbPk8_C4kLC4byPz3hHg/exec" class="button-link" target="_blank">
+            เข้าสู่คลังหลักสูตร
+        </a>
+    </div>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> ชื่อองค์กรของคุณ. สงวนลิขสิทธิ์.</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
